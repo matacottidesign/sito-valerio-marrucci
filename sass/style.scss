@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'variables';
+
+body{
+	font-size: 18px;
+	color: #b3deff;
+	background: #111;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{font-family: $font-stack;}
+
+p{
+	margin-top: inherit;
+	margin-bottom: inherit;
+	color: $secondary-color;
+}
+
+#brand{
+	font-size: 25px;
+	font-family: $font-stack;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.navigation-bar{
+	list-style: none;
+}
+
+.nav-link{
+	padding: 0px !important;
+}
+
+.bg-light {
+    background-color: $primary-color !important;
+}
+
+a{
+	color: $secondary-color;
+}
+
+a:hover{
+	color: #b3deff;
+}
+
+.social a:hover{
+	color: #ffc107;
+}
+
+a:not([href]):not([tabindex]) {
+    color: $secondary-color !important;
+    text-decoration: none;
+}
+
+.navbar{
+	position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar-brand{
+	font-size: 1.5rem !important;
+}
+
+.navbar-item{
+	font-size: 0.9rem !important;
+}
+
+hr {
+    margin-top: inherit !important;
+    margin-bottom: inherit !important;
+    border-top: 2px solid rgba(255,255,255,0.1);
+    width: 65%;
+}
+
+.yellow-word{
+	color: #ffc107;
+}
+
+.card-footer{
+	margin-top: 20px;
+	padding: 0px !important;
+	background-color: inherit !important;
+	border-top: inherit !important;  
+}
+
+.navbar-toggler{
+	background-color: $secondary-color;
+}
+
+#credit-card{
+	width: 65%;
+	padding-right: 5%;
+}
+
+#aside-card{
+	width: 35%;
+	float: right;
+	text-align: center;
+}
+
+.card{
+	border: inherit !important;
+	background-color: inherit !important; 
+}
+
+.whitespace_fixednav{
+	padding-top: 120px;
+}
+
+li{
+	list-style: none;
+	font-family: $font-stack;
+}
+
+.navbar-ligh .navbar-toggler-icon {
+	background-image: inherit;
+}
+
+footer{
+	background: $primary-color;
+}
+
+.mail{
+	font-family: TimesNewRoman;
+}
+
+#contact{
+	margin-top: 240px;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+a.home {
+	color: $secondary-color !important;
+}
+
+.open-button{
+	border: 3px solid $secondary-color;
+}
+
+.main-box{
+	width: 1200px;
+	margin: 20px auto; 
+	columns: 4;
+	column-gap: 40px;
+}
+
+.main-box .box img{
+	width: 100%;
+}
+
+.main-box .box p{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.main-box .box{
+	width: 100%;
+	margin: 0 0 20px;
+	padding: 10px;
+	border: 3px solid $secondary-color;
+	overflow: hidden; 
+	break-inside: avoid;
+}
+
+#pdf_download{
+	text-align: center !important;
+}
+
+@media (max-width: 1200px) {
+	.main-box{
+	width: calc(100% - 40px);
+	box-sizing: border-box;
+	padding: 20px;
+	columns: 3;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-box{
+	columns: 2;
+	}
+}
+
+@media (max-width: 480px) {
+	.main-box{
+	columns: 1;
+	}
+}
+
